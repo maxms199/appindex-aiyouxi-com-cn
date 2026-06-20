@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pg游戏 · 简明指南与访问提醒</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fafbfc;
+      color: #1e2a3a;
+      line-height: 1.7;
+      padding: 0 1.25rem;
+    }
+    .page-wrap {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+    /* hero */
+    .hero {
+      margin-bottom: 3.2rem;
+      padding-top: 1.8rem;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #0b1a2b;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      color: #546e7a;
+      max-width: 520px;
+      border-left: 3px solid #d0d9e0;
+      padding-left: 1.2rem;
+    }
+    /* 通用章节 */
+    .section {
+      margin-bottom: 2.8rem;
+    }
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: #1f3a4b;
+      margin-bottom: 0.9rem;
+      border-bottom: 1px solid #e9edf0;
+      padding-bottom: 0.4rem;
+    }
+    p {
+      margin-bottom: 0.95rem;
+      font-size: 0.95rem;
+      color: #2c3f50;
+    }
+    p a, .faq-item a {
+      color: #1f6390;
+      text-decoration: none;
+      border-bottom: 1px solid #cbdae6;
+      transition: border-color 0.15s;
+    }
+    p a:hover, .faq-item a:hover {
+      border-bottom-color: #1f6390;
+    }
+    /* 优势区 - 卡片网格 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.2rem 0 1.8rem;
+    }
+    .feature-card {
+      background: #ffffff;
+      border: 1px solid #e2e9ef;
+      border-radius: 12px;
+      padding: 1rem 1.1rem 1.1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+    }
+    .feature-card h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1a3142;
+      margin-bottom: 0.4rem;
+    }
+    .feature-card p {
+      font-size: 0.85rem;
+      color: #4a5f6e;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+    /* 说明区 + 提示 */
+    .note-box {
+      background: #f2f6fa;
+      border-radius: 12px;
+      padding: 1.2rem 1.4rem;
+      margin: 1.4rem 0 1.8rem;
+      font-size: 0.9rem;
+      border-left: 3px solid #9bb7cd;
+      color: #1e3344;
+    }
+    .note-box strong {
+      font-weight: 600;
+      color: #0b2a3e;
+    }
+    /* FAQ 摘要 */
+    .faq-list {
+      list-style: none;
+      padding: 0;
+    }
+    .faq-item {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid #edf2f6;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #1a3142;
+      margin-bottom: 0.1rem;
+    }
+    .faq-a {
+      font-size: 0.85rem;
+      color: #4d6575;
+    }
+    /* 底部 */
+    .footer-links {
+      margin-top: 2.6rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid #e2e9ef;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      font-size: 0.85rem;
+      color: #738a98;
+    }
+    .footer-links a {
+      color: #3b5f79;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .footer-links a:hover {
+      border-bottom-color: #3b5f79;
+    }
+    .footer-note {
+      margin-top: 0.9rem;
+      font-size: 0.75rem;
+      color: #8da0ae;
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.8rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .page-wrap { padding: 1.8rem 0 3rem; }
+      .section { margin-bottom: 2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>pg游戏 · 简明指南与访问提醒</h1>
+    <div class="sub">从路径选择到信息确认，每一步都值得认真对待。</div>
+  </div>
+
+  <!-- 介绍区：切入角度 + 链接 -->
+  <div class="section">
+    <p>
+      当你准备进入一个游戏平台时，最先需要确认的往往是入口的准确性与环境的透明度。<a href="https://index-pggames.com">pg游戏</a> 旨在为使用者提供一个相对集成的基础信息页，而非直接跳转至复杂终端。本文从导航逻辑与安全访问角度出发，整理了几条使用前需留意的要点，帮助你更冷静地开始。
+    </p>
+    <p>
+      在浏览任何游戏资源之前，请花半分钟了解当前页面的定位：它更像一张索引，而不是最终操作界面。保持对域名、页面描述和跳转行为的观察，能有效减少信息差带来的困惑。
+    </p>
+  </div>
+
+  <!-- 优势区：特点卡片 -->
+  <div class="section">
+    <div class="section-title">页面功能特点</div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>集中式入口参考</h3>
+        <p>避免在多个来源间来回切换，该页面提供统一的信息锚点，减少认知负荷。</p>
+      </div>
+      <div class="feature-card">
+        <h3>低干扰结构</h3>
+        <p>没有弹窗、自动播放或过度动效，内容以纯文本和卡片为主，专注阅读。</p>
+      </div>
+      <div class="feature-card">
+        <h3>静态索引设计</h3>
+        <p>页面本身不承载游戏逻辑或后台交互，仅作为信息展示与导航起点。</p>
+      </div>
+      <div class="feature-card">
+        <h3>适配多种设备</h3>
+        <p>窄正文与响应式布局让手机、平板、桌面都能获得一致的浏览体验。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 说明区：场景与提醒 -->
+  <div class="section">
+    <div class="section-title">访问场景与注意事项</div>
+    <p>
+      很多用户会在搜索引擎或社交分享中接触到 <a href="https://index-pggames.com">pg游戏</a> 相关链接，但不同渠道的上下文可能差异较大。建议在点击任何链接前，先观察网址拼写是否完整、页面是否带有明确出处说明。尤其注意仿冒域名或相似名称的第三方站点。
+    </p>
+    <p>
+      此外，部分浏览器或网络环境可能会对游戏类域名进行拦截或标记。如果遇到页面加载异常，建议先检查网络连接与安全证书状态，而非盲目重复刷新。保持对界面提示的敏感度，比追求速度更实际。
+    </p>
+    <div class="note-box">
+      <strong>提醒：</strong> 不要在非官方或未知来源的页面输入个人账户信息、支付凭证或私密数据。任何要求“验证身份”或“提前充值”的弹窗都应引起警觉。即便当前页面看起来简洁，也不代表它背后没有风险链路。
+    </div>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="section">
+    <div class="section-title">常见问题 (FAQ 摘要)</div>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <div class="faq-q">这个页面就是游戏官网吗？</div>
+        <div class="faq-a">不是。它是一个信息索引页，帮助你了解 <a href="https://index-pggames.com">pg游戏</a> 的基本情况与访问注意事项，而非最终游戏平台。实际服务需通过页面内提供的链路自行判断。</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q">为什么页面内容这么简洁？</div>
+        <div class="faq-a">目的是降低干扰，让你快速定位核心信息。过多的装饰或功能按钮反而可能模糊使用意图。</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q">我需要注册或登录才能使用吗？</div>
+        <div class="faq-a">本页面无需任何操作即可浏览。但请注意，后续跳转到的第三方站点可能有各自的注册与验证流程，请提前阅读其服务条款。</div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-q">页面里的链接安全吗？</div>
+        <div class="faq-a">本页只指向 <code>index-pggames.com</code> 域名下的资源，并且不附加任何跟踪参数。但你仍需在离开后自行判断目标页面的安全环境。</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 底部链接 -->
+  <div class="footer-links">
+    <span>参考主页：</span>
+    <a href="https://index-pggames.com">pg游戏</a>
+    <span style="color:#cbdae6;">|</span>
+    <a href="#">常见问题（持续更新）</a>
+    <a href="#">使用说明</a>
+    <a href="#">隐私说明</a>
+  </div>
+  <div class="footer-note">
+    本页仅供信息参考，不构成任何形式的推荐或保证。请根据自身判断决定后续操作。
+  </div>
+
+</div>
+</body>
+</html>
