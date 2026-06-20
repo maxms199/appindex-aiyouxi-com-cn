@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星空体育app · 稳定入口说明页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9f6f1;
+      font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+      color: #2f2e2b;
+      line-height: 1.75;
+      padding: 2.5rem 1.5rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 780px;
+      width: 100%;
+      background-color: #fffcf8;
+      padding: 3rem 2.5rem;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      border: 1px solid #ede7dd;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #3d3a32;
+      margin-bottom: 0.3rem;
+      border-left: 5px solid #b0906e;
+      padding-left: 1.2rem;
+    }
+
+    .subhead {
+      font-size: 1rem;
+      color: #8a8274;
+      margin-bottom: 2rem;
+      padding-left: 1.8rem;
+      border-bottom: 1px solid #e7dfd3;
+      padding-bottom: 0.8rem;
+    }
+
+    .intro {
+      font-size: 1.08rem;
+      background: #f5efe7;
+      padding: 1.5rem 1.8rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      color: #3a3530;
+      border-left: 4px solid #c5b09a;
+    }
+
+    .intro strong {
+      color: #6b5a4a;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1.04rem;
+      text-align: justify;
+    }
+
+    .pull-quote {
+      background: #f3ede4;
+      border-left: 6px solid #b0906e;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      font-style: normal;
+      border-radius: 0 10px 10px 0;
+      color: #4d453c;
+    }
+
+    .pull-quote::before {
+      content: "📌 ";
+      font-size: 1.2rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 1.8rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 1.5rem;
+    }
+
+    .feature-list li {
+      background: #f8f3eb;
+      padding: 0.9rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      border: 1px solid #e2d9cd;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .feature-list li::before {
+      content: "·";
+      color: #b0906e;
+      font-weight: 700;
+      margin-right: 0.6rem;
+      font-size: 1.3rem;
+    }
+
+    .faq-mini {
+      background: #f2ede4;
+      padding: 1.6rem 1.8rem;
+      border-radius: 12px;
+      margin-top: 1.8rem;
+    }
+
+    .faq-mini h3 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #5a5042;
+      margin-bottom: 0.6rem;
+      border-bottom: 1px dashed #d6ccbe;
+      padding-bottom: 0.4rem;
+    }
+
+    .faq-mini p {
+      margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+
+    .faq-mini p:last-child {
+      margin-bottom: 0;
+    }
+
+    .visit-sentence {
+      margin-top: 2.2rem;
+      padding: 0.8rem 1.5rem;
+      background: #eae2d5;
+      border-radius: 30px;
+      text-align: center;
+      font-size: 1.05rem;
+      color: #3b3530;
+      border: 1px solid #d5cbbc;
+    }
+
+    .visit-sentence a {
+      color: #5f4e3c;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #b0906e;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .visit-sentence a:hover {
+      color: #2a231d;
+      border-bottom-color: #2a231d;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e4dbce;
+      margin: 2rem 0 1rem;
+    }
+
+    .footer-note {
+      font-size: 0.88rem;
+      color: #90877b;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .page {
+        padding: 1.8rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+        padding-left: 0.8rem;
+      }
+      .subhead {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+      }
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+      .intro {
+        padding: 1rem 1.2rem;
+      }
+      .pull-quote {
+        padding: 1rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>星空体育app · 稳定入口说明</h1>
+    <div class="subhead">一份关于访问路径与页面定位的平实整理</div>
+
+    <div class="intro">
+      对很多用户来说，找到持续可用的入口，比功能本身更值得认真对待。<br>
+      本文基于日常使用经验，将 <strong>星空体育app</strong> 的访问方式与页面结构做了分类梳理，提供一种清晰、无干扰的参考。
+    </div>
+
+    <p>
+      星空体育app 在近几次迭代中，将重点放在了访问稳定性与界面一致性上。无论通过哪种方式打开，核心页面都保持了相同的布局逻辑：首页以信息卡片为主，左侧导航固定了常用功能，右侧区域则根据模块动态渲染。这种结构降低了学习成本，也让不同设备之间的体验差异变得更小。
+    </p>
+
+    <p>
+      在入口层面，目前最直接的方式是通过其主域名完成访问。域名本身不附加跳转层，打开即进入应用首页，没有中间页或广告插页。如果需要确认当前是否为最新版本，可以直接在浏览器地址栏查看域名是否匹配，这也是最可靠的判断依据之一。
+    </p>
+
+    <div class="pull-quote">
+      页面结构稳定，不等于所有入口都同样可靠。建议将主域名存入浏览器书签，避免使用第三方聚合链接或非官方推广页。
+    </div>
+
+    <p>
+      除了域名直接访问，部分用户也会通过应用内生成的快捷方式或系统桌面图标进入。这两种方式本质上都是对主域名的封装，区别在于缓存策略和更新触发时机。桌面图标通常会缓存一份静态资源，偶尔需要手动刷新以获取最新内容；而浏览器书签则每次都会请求最新版本，适合对时效性有要求的场景。
+    </p>
+
+    <p>
+      从页面功能来看，星空体育app 将内容分为几个主要区域：资讯流、模块导航、个人中心以及设置面板。每个区域的入口都集中在首页上半部分，并且支持自定义排序。这种设计让不同使用习惯的人都能在两步以内到达目标页面，减少了冗余点击。
+    </p>
+
+    <ul class="feature-list">
+      <li>首页直接展示核心功能卡片，无需多层菜单</li>
+      <li>导航区域支持拖拽排序，适应个人使用频率</li>
+      <li>所有页面保持统一的米白色背景与圆角卡片风格</li>
+      <li>设置面板集中管理偏好与访问选项</li>
+    </ul>
+
+    <p>
+      在使用过程中，偶尔会遇到页面加载缓慢或白屏的情况。通常这与本地网络环境或 CDN 节点调度有关，而非应用本身的问题。遇到这种情况时，可以尝试切换网络或使用浏览器的无痕模式重新访问，多数情况下能够恢复正常。如果问题持续出现，建议检查域名解析是否被干扰，或者更换一个网络环境再次尝试。
+    </p>
+
+    <div class="faq-mini">
+      <h3>常见疑问摘要</h3>
+      <p><strong>Q：</strong> 页面版本如何确认？<br>
+      <strong>A：</strong> 登录后可在设置页底部查看版本号，通常版本号格式为 2025.04.xx，以发布日期为基准。</p>
+      <p><strong>Q：</strong> 页面在不同浏览器上显示有差异吗？<br>
+      <strong>A：</strong> 目前对 Chrome、Edge、Safari 的兼容性较好，Firefox 部分细节有轻微偏移，但不影响核心功能。</p>
+      <p><strong>Q：</strong> 是否需要注册才能浏览内容？<br>
+      <strong>A：</strong> 部分公开资讯无需登录即可阅读，但个性化功能与模块使用需要完成注册。</p>
+    </div>
+
+    <hr>
+
+    <div class="visit-sentence">
+      若需直接访问，可在地址栏输入 <a href="https://pkg-starryskyapp.com">星空体育app</a> 域名，页面会自动加载最新版本。
+    </div>
+
+    <div class="footer-note">
+      本页仅为使用说明参考，不构成任何形式的推荐或承诺。
+    </div>
+  </div>
+</body>
+</html>
